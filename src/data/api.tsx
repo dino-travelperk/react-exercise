@@ -43,9 +43,6 @@ export const deleteRecipe = async (recipeId: number): Promise<undefined> => {
   const path = `/recipes/${recipeId}/`
   const options = {
     method: 'DELETE',
-    headers: {
-      'Content-Type': 'application/json',
-    },
   }
 
   return await request<undefined>(path, options)

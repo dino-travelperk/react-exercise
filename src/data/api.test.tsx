@@ -35,6 +35,9 @@ describe('createRecipe', () => {
     expect(mockedRequest).toHaveBeenCalledWith('/recipes/', {
       method: 'POST',
       body: JSON.stringify(recipe),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     })
   })
 })
@@ -50,6 +53,9 @@ describe('updateRecipe', () => {
     expect(mockedRequest).toHaveBeenCalledWith(`/recipes/${recipe.id}/`, {
       method: 'PATCH',
       body: JSON.stringify(recipe),
+      headers: {
+        'Content-Type': 'application/json',
+      },
     })
   })
 })

@@ -10,7 +10,7 @@ const Recipes = () => {
     <div className="Recipes">
       <h1>The best style-less Recipe App!</h1>
       <RecipesProvider>
-        <RecipeSearch name="" />
+        <RecipeSearch />
         <RecipeFormContainer />
         <RecipeList />
       </RecipesProvider>

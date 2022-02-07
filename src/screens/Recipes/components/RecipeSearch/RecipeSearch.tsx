@@ -2,14 +2,10 @@ import { useContext, useEffect } from 'react'
 import { DispatchContext } from '../../../../contexts/RecipesContext/recipesContext'
 import useInputState from '../../../../hooks/useInputState'
 
-interface IRecipeSearchProps {
-  name?: string
-}
-
-const RecipeSearch = (props: IRecipeSearchProps) => {
+const RecipeSearch = () => {
   const { retrieveRecipes } = useContext(DispatchContext)
 
-  const [name, handleNameChange] = useInputState(props.name ?? '')
+  const [name, handleNameChange] = useInputState('')
 
   useEffect(() => {
     retrieveRecipes(name)

@@ -9,7 +9,7 @@ const RecipeList = () => {
   const { retrieveRecipes } = useContext(DispatchContext)
   const recipes = useContext(RecipesContext)
   const listItems = recipes.map((recipe) => (
-    <RecipeItem key={recipe.id} {...recipe}></RecipeItem>
+    <RecipeItem key={recipe.id} {...recipe} />
   ))
 
   useEffect(() => {
