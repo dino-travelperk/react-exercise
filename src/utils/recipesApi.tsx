@@ -10,6 +10,11 @@ export default async function request<T>(
       throw new Error(response.statusText)
     }
 
+    if (response.status === 204) {
+      const noContentResponse: any = undefined
+      return noContentResponse
+    }
+
     const body = await response.json()
 
     return body

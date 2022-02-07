@@ -1,0 +1,22 @@
+.RecipeItem {
+  display: inline-flexbox;
+  width: 450px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.RecipeItem-contents {
+  width: 70%;
+  float: left;
+}
+
+.RecipeItem-buttons {
+  width: 30%;
+  float: right;
+  margin-top: 15%;
+}
+
+.RecipeItem-edit {
+  margin-top: 15%;
+}

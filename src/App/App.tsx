@@ -1,6 +1,5 @@
-import React from 'react'
-import './App.css'
 import Recipes from '../screens/Recipes'
+import './App.css'
 
 function App() {
   return <Recipes />
